@@ -261,7 +261,7 @@ class PangleVerifyResult extends PangleResult {
     }
     return PangleVerifyResult(
       code: json['code'],
-      message: json['message'],
+      message: json['message'] ?? '',
       verify: json['verify'],
     );
   }
