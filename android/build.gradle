@@ -38,18 +38,18 @@ if (localPropertiesFile.exists()) {
 android {
     namespace 'io.github.nullptrx.pangleflutter'
     compileSdkVersion 31
-     compileOptions {
-         sourceCompatibility JavaVersion.VERSION_17
-         targetCompatibility JavaVersion.VERSION_17
-     }
-
-     kotlin {
-         jvmToolchain(17)
-     }
-
-     kotlinOptions {
-         jvmTarget = '17'
-     }
+//     compileOptions {
+//         sourceCompatibility JavaVersion.VERSION_17
+//         targetCompatibility JavaVersion.VERSION_17
+//     }
+//
+//     kotlin {
+//         jvmToolchain(17)
+//     }
+//
+//     kotlinOptions {
+//         jvmTarget = '17'
+//     }
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
     }
