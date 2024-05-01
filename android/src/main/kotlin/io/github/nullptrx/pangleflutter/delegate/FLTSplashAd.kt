@@ -19,7 +19,7 @@ internal class FLTSplashAd(
   private var nativeDialog: NativeSplashDialog? = null
 
 
-  override fun onSplashLoadSuccess() {
+  override fun onSplashLoadSuccess(ad: CSJSplashAd) {
 
   }
 
