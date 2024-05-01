@@ -65,7 +65,7 @@ class FlutterSplashView(
   }
 
 
-  override fun onSplashLoadSuccess() {
+  override fun onSplashLoadSuccess(ad: CSJSplashAd) {
 
   }
 

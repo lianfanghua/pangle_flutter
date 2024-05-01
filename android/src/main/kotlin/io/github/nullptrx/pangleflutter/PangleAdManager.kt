@@ -243,7 +243,8 @@ class PangleAdManager {
 
     }.build()
 
-    TTAdSdk.init(applicationContext, config, object : TTAdSdk.InitCallback {
+    TTAdSdk.init(applicationContext, config)
+    TTAdSdk.start(object : TTAdSdk.Callback {
       override fun success() {
         callback(mapOf("code" to 0, "message" to ""))
       }

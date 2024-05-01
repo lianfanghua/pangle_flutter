@@ -33,7 +33,6 @@ import android.widget.FrameLayout
 import com.bytedance.sdk.openadsdk.TTAdConstant
 import com.bytedance.sdk.openadsdk.TTAdDislike
 import com.bytedance.sdk.openadsdk.TTAdNative
-import com.bytedance.sdk.openadsdk.TTBannerAd
 import com.bytedance.sdk.openadsdk.TTNativeAd
 import io.flutter.plugin.common.BinaryMessenger
 import io.flutter.plugin.common.MethodCall
