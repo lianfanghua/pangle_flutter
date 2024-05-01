@@ -23,6 +23,7 @@
 import 'dart:async';
 import 'dart:io';
 
+import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import 'build.dart';
@@ -165,10 +166,14 @@ class PanglePlugin {
         iOS.toJSON(),
       );
     } else if (Platform.isAndroid && android != null) {
-      result = await _methodChannel.invokeMapMethod<String, dynamic>(
-        'init',
-        android.toJSON(),
-      );
+      try {
+        result = await _methodChannel.invokeMapMethod<String, dynamic>(
+          'init',
+          android.toJSON(),
+        );
+      } catch (e) {
+        debugPrint(e.toString());
+      }
     }
     return PangleResult.fromJson(result);
   }
