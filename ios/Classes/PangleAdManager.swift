@@ -42,9 +42,6 @@ public final class PangleAdManager: NSObject {
         let idfa: String? = args["idfa"] as? String
         
         let config = BUAdSDKConfiguration.init()
-        
-        BUAdSDKManager.setAppID(appId)
-
         config.appID = appId
         if logLevel != nil {
             config.debugLog = logLevel == 0 ? 0 : 1
