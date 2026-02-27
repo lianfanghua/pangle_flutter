@@ -22,6 +22,32 @@
 	<string>$(FLUTTER_BUILD_NUMBER)</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>始终允许</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>需要允许</string>
+	<key>NSUserTrackingUsageDescription</key>
+	<string>需要获取您设备的广告标识符，以为您提供更好的广告体验</string>
+	<key>SKAdNetworkItems</key>
+	<array>
+		<dict>
+			<key>SKAdNetworkIdentifier</key>
+			<string>238da6jt44.skadnetwork</string>
+		</dict>
+		<dict>
+			<key>SKAdNetworkIdentifier</key>
+			<string>x2jnk7ly8j.skadnetwork</string>
+		</dict>
+		<dict>
+			<key>SKAdNetworkIdentifier</key>
+			<string>22mmun2rn5.skadnetwork</string>
+		</dict>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
@@ -41,31 +67,5 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
-	<key>NSAppTransportSecurity</key>
-	<dict>
-		<key>NSAllowsArbitraryLoads</key>
-		<true/>
-	</dict>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>始终允许</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>需要允许</string>
-	<key>SKAdNetworkItems</key>
-    <array>
-        <dict>
-          <key>SKAdNetworkIdentifier</key>
-          <string>238da6jt44.skadnetwork</string>
-        </dict>
-        <dict>
-          <key>SKAdNetworkIdentifier</key>
-          <string>x2jnk7ly8j.skadnetwork</string>
-        </dict>
-        <dict>
-          <key>SKAdNetworkIdentifier</key>
-          <string>22mmun2rn5.skadnetwork</string>
-        </dict>
-    </array>
-    <key>NSUserTrackingUsageDescription</key>
-    <string>需要获取您设备的广告标识符，以为您提供更好的广告体验</string>
 </dict>
 </plist>

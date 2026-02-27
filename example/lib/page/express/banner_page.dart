@@ -25,7 +25,6 @@ import 'dart:io';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:pangle_flutter/pangle_flutter.dart';
-import 'package:pangle_flutter_example/common/version.dart';
 
 import '../../../common/common.dart';
 import '../constant.dart';

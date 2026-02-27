@@ -56,8 +56,6 @@ class _InterstitialPageState extends State<InterstitialPage> {
   }
 
   _onTapShow() async {
-    final width = kPangleScreenWidth - 30;
-    final height = width / 1.667;
 
     final result = await pangle.loadFullscreenVideoAd(
       iOS: const IOSFullscreenVideoConfig(

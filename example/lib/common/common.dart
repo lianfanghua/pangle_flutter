@@ -26,7 +26,7 @@ import 'package:pangle_flutter/pangle_flutter.dart';
 var kThemeStatus = PangleTheme.light;
 
 const _textTheme = TextTheme(
-  button: TextStyle(
+  labelLarge: TextStyle(
     color: Colors.white,
   ),
 );
@@ -34,7 +34,6 @@ const _textTheme = TextTheme(
 final kThemeData = ThemeData(
   colorScheme: ColorScheme.fromSwatch(
     accentColor: const Color(0xFFFF4081),
-    primaryColorDark: const Color(0xFFFF4081),
   ),
   appBarTheme: const AppBarTheme(
     backgroundColor: Color(0xFFFF4081),
@@ -49,8 +48,8 @@ final kThemeData = ThemeData(
   ),
   elevatedButtonTheme: ElevatedButtonThemeData(
     style: ElevatedButton.styleFrom(
-      onPrimary: Colors.white,
-      primary: const Color(0xFFFF4081),
+      foregroundColor: Colors.white,
+      backgroundColor: const Color(0xFFFF4081),
       // minimumSize: Size(88, 36),
       // padding: EdgeInsets.symmetric(horizontal: 16),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(32)),
